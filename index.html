@@ -34,6 +34,24 @@
                     (A list can be added by separating paths with colon)
                     <i><a href="https://nodejs.org/api/modules.html#modules_loading_from_the_global_folders">source</a></i>
                 </li>
+                
+                 <li>
+                    pon 26 sie 2019
+                    <br/>
+                    To run task that debugs specific node test
+                    <code>
+                        {
+                            "type": "node",
+                            "request": "launch",
+                            "name": "Launch test in current file with selected test name",
+                            "program": "${workspaceRoot}\\scripts\\test.js",
+                            "env": {
+                                "DEBUG": "true"
+                            },
+                            "args": ["--runInBand", "--testPathPattern", "${fileBasenameNoExtension}", "--testNamePattern", "${selectedText}"]
+                        },
+                     </code>
+                </li>
             </ol>
         </div>
     </body>
