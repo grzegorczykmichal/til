@@ -39,6 +39,7 @@
                     pon 26 sie 2019
                     <br/>
                     To run task that debugs specific node test
+                     <br/>
                     <code>
                         {
                             "type": "node",
@@ -51,6 +52,22 @@
                             "args": ["--runInBand", "--testPathPattern", "${fileBasenameNoExtension}", "--testNamePattern", "${selectedText}"]
                         },
                      </code>
+                </li>
+                
+                <li>
+                    wt 27 sie 2019
+                    <br/>
+                    Remember to add your ssh private keyu path by calling <code>ssh-add ~/.ssh/[file name]</code>
+                </li>
+                
+                 
+                <li>
+                    wt 27 sie 2019
+                    <br/>
+                    When you are still asked for password after setting ssh key on you repo, check the remotes by calling<br/>
+                    </code>git remote -v</code><br/>
+                    To set the proper one (for some reason htttp(s) won;t work) use this:<br/>
+                    <code>git remote set-url origin git@gitlab.com:[username]/[reponame].git</code>
                 </li>
             </ol>
         </div>
